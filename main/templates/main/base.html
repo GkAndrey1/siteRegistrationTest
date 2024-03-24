@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O!Shoping</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://www.svgrepo.com/show/533044/cart-shopping-fast.svg" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'main/css/base.css' %}">
     {% block link %}
         
     {% endblock link %}
@@ -13,7 +14,14 @@
 <body>
     <header>
         <div id="header">
-            <a href="{% url 'main' %}"><h1>O!Shoping</h1></a>
+            <a href="{% url 'main' %}"><img src="{% static 'main/image/Ico.png' %}" alt=""></a>
+            <div id="search">
+                <input type="text" placeholder="I search...">
+                <button>Confirm</button>
+            </div>
+            <div class="urls">
+                
+            </div>
         </div>
     </header>
     <main>
